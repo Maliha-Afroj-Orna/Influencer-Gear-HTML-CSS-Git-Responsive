@@ -242,3 +242,65 @@ footer {
     padding: 5px;
     cursor: pointer;
 }
+
+
+
+/* Responsive */
+/* small device */
+@media screen and (max-width: 576px) {
+    /* nav styles */
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* hero styles */
+    .hero-container {
+        flex-direction: column-reverse;
+        gap: 80px;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .hero-title {
+        font-size: 2rem;
+        line-height: auto;
+    }
+    .hero-desc {
+        font-size: 14px;
+    }
+    .hero-right img {
+        max-width: 255px;
+    }
+
+    /* logos styles */
+    .logos {
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+    .logos-image {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 20px;
+    }
+
+    /* popular styles */
+    .popular-container {
+        margin-bottom: 50px;
+    }
+    .popular-title {
+        font-size: 1.5rem;
+    }
+    .popular-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        place-items: center;
+    }
+
+    /* feature styles */
+    .feature-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+}
